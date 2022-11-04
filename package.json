@@ -9,7 +9,7 @@
     "dev": "webpack server --config=./webpack/dev.js",
     "bundle": "webpack --config=./webpack/dev.js",
     "build": "webpack build --config=./webpack/prod.js --progress",
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "author": {
     "name": "yamoo9",
