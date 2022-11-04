@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 dist
 build
 coverage
+=======
+build
+dist
+coverage
+>>>>>>> 4ae91bd9836e9b901830936481b4df651e2054c6

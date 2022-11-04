@@ -9,3 +9,10 @@ img {
 figure {
   margin: 0;
 }
+<<<<<<< HEAD
+=======
+
+a:has(img) {
+  display: inline-block;
+}
+>>>>>>> 4ae91bd9836e9b901830936481b4df651e2054c6

@@ -75,6 +75,12 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -115,11 +121,26 @@
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+<<<<<<< HEAD
   "typescript.format.enable": false,
+=======
+  "typescript.format.enable": true,
+>>>>>>> 4ae91bd9836e9b901830936481b4df651e2054c6
   "typescript.validate.enable": true,
 
   "path-intellisense.extensionOnImport": true,
   "path-intellisense.mappings": {
     "@": "${workspaceRoot}/src"
+<<<<<<< HEAD
   }
+=======
+  },
+  "eslint.validate": [
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "javascriptreact"
+  ],
+  "eslint.workingDirectories": ["./src"]
+>>>>>>> 4ae91bd9836e9b901830936481b4df651e2054c6
 }
