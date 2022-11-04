@@ -8,7 +8,7 @@ import {
   svgAssetsLoader,
 } from './loaders/index.js';
 
-import { createDotEnv } from './plugins/index.js';
+import { createHtmlTemplate } from './plugins/index.js';
 
 const commonConfig = {
   target: ['browserslist'],
@@ -19,12 +19,17 @@ const commonConfig = {
     },
   },
   entry: {
-    main: resolve('src/main.jsx'),
-    // app: resolve('src/index.tsx'),
+    main: {
+      import: resolve('src/main.jsx'),
+      dependOn: 'vendors',
+    },
+    vendors: ['react', 'react-dom'],
+    // react: 'react',
+    // 'react-dom': 'react-dom',
   },
   output: {
     path: resolve('public'),
-    filename: '[name].bundle.js',
+    filename: '[name].[contenthash].bundle.js',
   },
   module: {
     rules: [
@@ -36,7 +41,7 @@ const commonConfig = {
       svgAssetsLoader,
     ],
   },
-  plugins: [createDotEnv()].filter(Boolean),
+  plugins: [createHtmlTemplate()].filter(Boolean),
 };
 
 export default commonConfig;
